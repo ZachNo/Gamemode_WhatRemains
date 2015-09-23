@@ -1,0 +1,16 @@
+exec("./Item_RedSoda.cs");
+exec("./Item_BlueSoda.cs");
+exec("./Item_RedSodaBottle.cs");
+exec("./Item_BlueSodaBottle.cs");
+exec("./Item_Hamburger.cs");
+exec("./Item_Cheeseburger.cs");
+exec("./Item_Fatburger.cs");
+exec("./Item_Candy.cs");
+exec("./Item_Kebab.cs");
+exec("./Item_Sandwich.cs");
+exec("./Item_Fries.cs");
+exec("./Item_Hotdog.cs");
+exec("./Item_Sushiroll.cs");
+exec("./Item_Icecreamcup.cs");
+exec("./Item_Icecreamstick.cs");
+exec("./Item_Cake.cs");

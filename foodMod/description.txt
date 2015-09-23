@@ -1,0 +1,3 @@
+Title: LeetLegacy Food Item Pack
+Author: LeetZero and Chernobyl
+Have some food with you when you use this pack, you will get hungry.

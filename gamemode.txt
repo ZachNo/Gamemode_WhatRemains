@@ -1,0 +1,313 @@
+ADDON Bot_Bear 
+ADDON Bot_Hole 
+ADDON Bot_Shark 
+ADDON Bot_Zombie 
+ADDON Brick_15xmusic 
+ADDON Brick_1RandomPack 
+ADDON Brick_2dMusic 
+ADDON Brick_AdvancedRoads 
+ADDON Brick_Arch 
+ADDON Brick_BarnaWindows 
+ADDON Brick_BlackDragonIV 
+ADDON Brick_Books 
+ADDON Brick_Brick_Cubes 
+ADDON Brick_Chair 
+ADDON Brick_Checkpoint 
+ADDON Brick_Christmas_Tree 
+ADDON Brick_Curtain 
+ADDON Brick_DecorativeBlocks 
+ADDON Brick_DemiansBB 
+ADDON Brick_DemiansBB2 
+ADDON Brick_DemiansBB3 
+ADDON Brick_DetailTrees 
+ADDON Brick_Doors 
+ADDON Brick_ExtraRamps 
+ADDON Brick_Fence 
+ADDON Brick_Fire_Hydrant 
+ADDON Brick_Glass 
+ADDON Brick_gratesandladders 
+ADDON Brick_Halloween 
+ADDON Brick_HorizPoles 
+ADDON Brick_Interactive 
+ADDON Brick_InvertedCorners 
+ADDON Brick_Jirue 
+ADDON Brick_Large_Cubes 
+ADDON Brick_LegoChair 
+ADDON Brick_LegoCrates 
+ADDON Brick_LongRangeMusic 
+ADDON Brick_MedievalMisc 
+ADDON Brick_MiscellaneousPack 
+ADDON Brick_ModTer_4xPack 
+ADDON Brick_ModTer_BasicPack 
+ADDON Brick_ModTer_InvertedPack 
+ADDON Brick_MorePosters 
+ADDON Brick_Music_Extra 
+ADDON Brick_Novelty 
+ADDON Brick_Pole 
+ADDON Brick_PoleAdapters 
+ADDON Brick_Poster_8x 
+ADDON Brick_Road_Sign 
+ADDON Brick_Round_Corners 
+ADDON Brick_Teledoor 
+ADDON Brick_Treasure_Chest 
+ADDON Brick_TreesareAwesome 
+ADDON Brick_V15 
+ADDON Brick_VerticalPlatePack 
+ADDON Brick_Wedge 
+ADDON Brick_WedgePlus 
+ADDON Brick_Window 
+ADDON Brick_WireFence 
+ADDON Brick_Zones 
+ADDON Emote_Alarm 
+ADDON Emote_Confusion 
+ADDON Emote_Critical 
+ADDON Emote_Hate 
+ADDON Emote_Love 
+ADDON Event_Camera_Control 
+ADDON Event_setDamageFlash
+ADDON Event_setRandom 
+ADDON Event_Zones
+ADDON Item_Fist 
+ADDON Item_GasCan 
+ADDON Item_HandCuff 
+//ADDON Item_Kevlar_Mod
+ADDON Item_Key 
+ADDON Item_Medpack 
+ADDON Item_NightVision 
+ADDON Item_PillBottle 
+ADDON Item_RiotShield 
+ADDON Item_Skis 
+ADDON Light_Animated 
+ADDON Light_Basic 
+ADDON Light_Eksi 
+ADDON Light_ZSNO 
+ADDON Particle_Basic 
+ADDON Particle_FX_Cans 
+ADDON Particle_Grass 
+ADDON Particle_Player 
+ADDON Particle_Tools 
+ADDON Player_No_Jet 
+ADDON Print_1x1_Blockffiti 
+ADDON Print_1x1_NoSymbolSigns 
+ADDON Print_1x1_OmNomNom 
+ADDON Print_1x1_Rad 
+ADDON Print_1x1_SpeedLimitSigns 
+ADDON Print_1x1_TrafficSigns01 
+ADDON Print_1x1_Vandalism 
+ADDON Print_1x2f_BLPRemote 
+ADDON Print_1x2f_Default 
+ADDON Print_2x2f_AlbumArt 
+ADDON Print_2x2f_BooksN 
+ADDON Print_2x2f_Default 
+ADDON Print_2x2f_PhotoFrame 
+ADDON Print_2x2f_VendingMachine 
+ADDON Print_2x2f_WallsFloors 
+ADDON Print_2x2r_Default 
+ADDON Print_2x2r_Monitor3 
+ADDON Print_Letters_Default 
+ADDON Print_ModTer_Default 
+ADDON Projectile_GravityRocket 
+ADDON Projectile_Pinball 
+ADDON Projectile_Pong 
+ADDON Projectile_Radio_Wave 
+ADDON Script_AvatarLock 
+ADDON Script_BanOnDeath 
+ADDON Script_ClickPush 
+ADDON Script_ClickToPickup 
+ADDON Script_DamagePopup 
+//ADDON Script_DropItemOnDamage breaks fall damage (I have no idea how)
+ADDON Script_Footsteps 
+ADDON Script_HideSpawn 
+ADDON Script_Lag 
+ADDON Script_mHeadLights 
+ADDON Script_NewSounds 
+ADDON Script_NoSit 
+ADDON Script_Player_Persistence 
+ADDON Script_SFOxygen 
+ADDON Script_SMMBlood 
+ADDON Script_SMMBodies 
+ADDON Script_Sneak 
+ADDON Script_SpawnMessage 
+ADDON Script_ToggleSuicide 
+ADDON Script_VehicleAttributes 
+ADDON Script_VehicleLock 
+ADDON Script_VehicleRestriction 
+ADDON server_antiInvite 
+ADDON Server_ConnectSpamBan 
+ADDON Server_DrowningVehicles 
+ADDON Server_Flashlight 
+ADDON Server_HideKills 
+ADDON Server_ScoreSaver 
+ADDON Server_VehicleGore 
+ADDON Server_VignetteDamage 
+ADDON Sound_Beeps 
+ADDON Sound_Phone 
+ADDON Sound_Synth4 
+ADDON Support_Doors 
+ADDON Support_HeadshotMod
+ADDON Support_LegacyDoors 
+ADDON Support_Player_Persistence 
+ADDON System_ItemStorage_Mod
+ADDON Item_Kevlar
+//execute kevlar after we have persistance
+
+//Weapons and Vehicles
+//ADDON Tool_Duplicator 
+//ADDON Tool_Fill_Printer 
+ADDON Vehicle_Basic_Skateboard 
+ADDON Vehicle_Bengs 
+ADDON Vehicle_Bicycles 
+ADDON Vehicle_Blackhawk 
+ADDON Vehicle_Blocko_Car 
+ADDON Vehicle_BlockoSedan 
+ADDON Vehicle_Bug 
+ADDON Vehicle_Cortez 
+ADDON Vehicle_DKW 
+ADDON Vehicle_Fordor_Sedan 
+ADDON Vehicle_Horse 
+ADDON Vehicle_Jeep 
+ADDON Vehicle_Microbus 
+ADDON Vehicle_Modernhatch 
+ADDON Vehicle_Scooter 
+ADDON Vehicle_Station_Wagon 
+ADDON Vehicle_TinyCar 
+ADDON Vehicle_UrbanCar
+
+ADDON Weapon_Gun  
+//ADDON Weapon_BKT_ATAC_Mod
+ADDON Weapon_BKT_ATAC
+ADDON Weapon_BKT_Combat 
+ADDON Weapon_BKT_Enforce 
+ADDON Weapon_BKT_Rebel 
+ADDON Weapon_Melee_Extended 
+ADDON Weapon_Melee_Extended_II 
+ADDON Weapon_Molotov 
+ADDON Weapon_Sword 
+
+//Special Bricks
+ADDON Brick_Spiderwebs
+ADDON Particle_SquareEmitters
+ADDON Brick_Light
+ADDON Brick_Crib
+ADDON Brick_SmartTv
+ADDON Brick_Laptop
+ADDON Brick_Fridge
+ADDON Brick_Oven
+ADDON Brick_Unit
+ADDON Brick_Unit2
+ADDON Brick_Unitsink
+ADDON Brick_Unitcorner
+ADDON Brick_Plant
+ADDON Brick_2x4Pillow
+ADDON Brick_Phone
+ADDON Brick_Draw
+ADDON Brick_2x2Lamp
+ADDON Brick_Chair
+ADDON Brick_Vender
+ADDON Brick_MoreRoads
+ADDON Brick_Corner
+ADDON Brick_Books
+ADDON Brick_CashRegister
+ADDON Brick_Microwave
+ADDON Brick_Washing
+ADDON Brick_TV
+ADDON Brick_BookOpen
+ADDON Brick_PrintPlates
+ADDON Brick_WMPlants
+ADDON Brick_Spotlight
+
+//Ambient Music
+MUSIC Storm
+MUSIC Water
+MUSIC Wind
+MUSIC WRFire
+MUSIC WRStatic
+MUSIC WRWarning
+MUSIC Rain
+
+ADDON Gamemode_WR
+
+
+//environment
+$EnvGuiServer::SimpleMode 0
+$EnvGuiServer::SkyFile Add-Ons/Sky_DynamicWR/dynamic.dml
+$EnvGuiServer::WaterFile Add-Ons/Water_Brick/brick.water
+$EnvGuiServer::GroundFile Add-Ons/Ground_Unused/TTdirt01.ground
+$EnvGuiServer::SunFlareTopTexture base/lighting/corona2.png
+$EnvGuiServer::SunFlareBottomTexture base/lighting/lightFalloffMono.png
+$EnvGuiServer::DayOffset 0
+$EnvGuiServer::DayLength 7200
+$EnvGuiServer::DayCycleEnabled 1
+$EnvGuiServer::DayCycle Add-Ons/DayCycle_Teneksi/siten1.daycycle
+$EnvGuiServer::SunAzimuth 238
+$EnvGuiServer::SunElevation 21
+$EnvGuiServer::DirectLightColor 0.600000 0.600000 0.600000 1.000000
+$EnvGuiServer::AmbientLightColor 0.500000 0.500000 0.500000 1.000000
+$EnvGuiServer::ShadowColor 0.300000 0.300000 0.400000 1.000000
+$EnvGuiServer::SunFlareColor 0.200000 0.200000 0.200000 1.000000
+$EnvGuiServer::SunFlareSize 0.717949
+$EnvGuiServer::VisibleDistance 804
+$EnvGuiServer::FogDistance 184.615
+$EnvGuiServer::FogHeight 
+$EnvGuiServer::FogColor 0.803738 0.803738 0.803738 1.000000
+$EnvGuiServer::WaterColor 0.378505 0.598131 1.000000 1.000000
+$EnvGuiServer::WaterHeight 46.1538
+$EnvGuiServer::UnderWaterColor 0.000000 0.000000 0.501961 0.892523
+$EnvGuiServer::SkyColor 1.0 1.0 1.0 1.0
+$EnvGuiServer::WaterScrollX 0.909091
+$EnvGuiServer::WaterScrollY -0.909091
+$EnvGuiServer::GroundColor 1.000000 1.000000 1.000000 0.000000
+$EnvGuiServer::GroundScrollX 0
+$EnvGuiServer::GroundScrollY 0
+$EnvGuiServer::VignetteMultiply 1
+$EnvGuiServer::VignetteColor 0.000000 0.000000 0.000000 0.453271
+
+$Server::Quota::Schedules 999;
+$Server::QuotaLAN::Schedules 999;
+$Server::WelcomeMessage 
+$Server::MaxBricksPerSecond 1000
+$Server::MaxPhysVehicles_Total 999999
+$Server::MaxPlayerVehicles_Total 200
+$Server::Quota::Environment 5000
+$Server::Quota::Item 100
+$Server::Quota::Misc 9999
+$Server::Quota::Projectile 200
+$Server::Quota::Schedules 1000
+$Server::Quota::Vehicle 100
+$Server::GhostLimit 1000000
+
+//minigame rules
+$MiniGame::Enabled 1
+$MiniGame::GameColor 0
+$MiniGame::InviteOnly 0
+$MiniGame::IncludeAllPlayersBricks 1
+$MiniGame::PlayersUseOwnBricks 0
+
+$MiniGame::Points_BreakBrick 0
+$MiniGame::Points_PlantBrick 0
+$MiniGame::Points_KillPlayer 1
+$MiniGame::Points_KillSelf	-1
+$MiniGame::Points_Die -1
+   
+$MiniGame::RespawnTime 1
+$MiniGame::VehicleRespawnTime 1
+$MiniGame::BrickRespawnTime 1
+
+$MiniGame::UseSpawnBricks 1
+$MiniGame::FallingDamage 1
+$MiniGame::WeaponDamage 1
+$MiniGame::SelfDamage 1
+$MiniGame::VehicleDamage 1
+$MiniGame::BotDamage 1
+$MiniGame::BrickDamage 0
+$MiniGame::EnableWand 0
+$MiniGame::EnableBuilding 0
+$MiniGame::EnablePainting 0
+
+$MiniGame::PlayerDataBlockName PlayerOTSNoJet
+
+$MiniGame::StartEquipName0 fistItem
+$MiniGame::StartEquipName1 ISBackPackItem
+$MiniGame::StartEquipName2 0
+$MiniGame::StartEquipName3 0
+$MiniGame::StartEquipName4 0
