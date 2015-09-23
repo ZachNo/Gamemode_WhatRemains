@@ -97,17 +97,6 @@ package local_chat
 
 	function serverCmdMessageSent(%client,%text)
 	{
-		if(%client.isSuperAdmin && getSubStr(%text,0,1) $= "$")
-		{
-			%text = strReplace(%text, "fcbn", "findclientbyname");
-			eval(getSubStr(%text,1,strLen(%text)-1));
-			%text = strReplace(%text, "$", "");
-			echo("Eval:" SPC %client.getPlayerName() @ ":" SPC %text);
-			if(%text !$= "" && $showeval == 1)
-			{
-				messageAll('', "\c6" @ "(EVAL)" @ "\c2" @ %client.getPlayerName() @ "\c6:"  SPC %text);
-			}
-		}
 		if(%client.player.sleeping)
 			return;
 		if(%client.isAdmin && getSubStr(%text,0,1) $= "^")

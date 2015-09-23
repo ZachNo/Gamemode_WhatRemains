@@ -112,6 +112,106 @@ function GameConnection::checkFist(%this)
 	}
 }
 
+deactivatepackage(AmmoGuns2);
+package AmmoGuns3
+{
+	function Player::pickup(%this,%item)
+	{
+		%data = %item.dataBlock;
+		%ammo = %item.weaponAmmoLoaded;
+		%val = Parent::pickup(%this,%item);
+		if(%val == 1 && %data.maxAmmo > 0 && isObject(%this.client))
+		{
+			%slot = -1;
+			for(%i=0;%i<%this.dataBlock.maxTools;%i++)
+			{
+				if(isObject(%this.tool[%i]) && %this.tool[%i].getID() == %data.getID() && %this.toolAmmo[%i] $= "")
+				{
+					%slot = %i;
+					break;
+				}
+			}
+			
+			if(%slot == -1)
+				return %val;
+			
+			if(%ammo $= "")
+			{
+				%this.toolAmmo[%slot] = 0;//%data.maxAmmo;
+			}
+			else
+			{
+				%this.toolAmmo[%slot] = %ammo;
+			}
+		}
+		return %val;
+	}
+	
+	function ItemData::onAdd(%this,%obj)
+	{
+		if($weaponAmmoLoaded !$= "")
+		{
+			%obj.weaponAmmoLoaded = $weaponAmmoLoaded;
+			$weaponAmmoLoaded = "";
+		}
+		Parent::onAdd(%this,%obj);
+	}
+	
+	//Check if the gun needs to reload. Use this to trigger state changes.
+	function WeaponImage::onLoadCheck(%this,%obj,%slot)
+	{
+		if(%obj.toolAmmo[%obj.currTool] <= 0 && %this.item.maxAmmo > 0 && %obj.getState() !$= "Dead")
+			%obj.setImageAmmo(%slot,0);
+		else
+			%obj.setImageAmmo(%slot,1);
+	}
+	
+	//Use this state in single-ammo reload weapons e.g. Shotgun, Scattergun
+	function WeaponImage::onReloadCheck(%this,%obj,%slot)
+	{
+		if(%obj.toolAmmo[%obj.currTool] < %this.item.maxAmmo && %this.item.maxAmmo > 0 && %obj.getState() !$= "Dead")
+			%obj.setImageAmmo(%slot,0);
+		else
+			%obj.setImageAmmo(%slot,1);
+	}
+	
+	//Example, you may wish to have weapons load all at once
+	function WeaponImage::onReloaded(%this,%obj,%slot)
+	{
+		%obj.toolAmmo[%obj.currTool]++;
+	}
+	
+	function servercmdLight(%client)
+	{
+		if(isObject(%client.player) && isObject(%client.player.getMountedImage(0)))
+		{
+			%p = %client.player;
+			%im = %p.getMountedImage(0);
+			if(%im.item.maxAmmo > 0 && %im.item.canReload == 1 && %p.toolAmmo[%p.currTool] < %im.item.maxAmmo)
+			{
+				if(%p.getImageState(0) $= "Ready")
+					%p.setImageAmmo(0,0);
+				return;
+			}
+		}
+		
+		Parent::servercmdLight(%client);
+	}
+};
+activatepackage(AmmoGuns3);
+RegisterPersistenceVar("quantity9MMrounds",false,"");
+RegisterPersistenceVar("quantity45caliber",false,"");
+RegisterPersistenceVar("quantity500rounds",false,"");
+RegisterPersistenceVar("quantityshotgunrounds",false,"");
+RegisterPersistenceVar("quantity556rounds",false,"");
+RegisterPersistenceVar("quantity762mmrounds",false,"");
+RegisterPersistenceVar("quantity338rounds",false,"");
+RegisterPersistenceVar("quantity50calrounds",false,"");
+RegisterPersistenceVar("quantity57rounds",false,"");
+RegisterPersistenceVar("quantityakrounds",false,"");
+RegisterPersistenceVar("quantity762mmrounds",false,"");
+RegisterPersistenceVar("quantity44Prounds",false,"");
+
 //Overrides the connect, leave, and death chat messages
 package override_minigameMessage
 {
@@ -134,8 +234,6 @@ package override_minigameMessage
 		{
 			if(%b == 0 && %client.player.toolammo[%a] > 0)
 			{
-				echo("Passed second drop test");
-				echo(%client.player.lasttool[%a]);
 				%wepID = %client.player.lasttool[%a].getID();
 				if(%wepID == G18FAOItem.getID() || %wepID == HKMP5KItem.getID() || %wepID == PP90M1Item.getID())
 				{

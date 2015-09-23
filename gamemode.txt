@@ -147,7 +147,7 @@ ADDON Support_Doors
 ADDON Support_HeadshotMod
 ADDON Support_LegacyDoors 
 ADDON Support_Player_Persistence 
-ADDON System_ItemStorage_Mod
+ADDON System_ItemStorage
 ADDON Item_Kevlar
 //execute kevlar after we have persistance
 
