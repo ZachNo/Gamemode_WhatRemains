@@ -3,6 +3,7 @@ A generic Zombie PvP Survival gamemode for Blockland
 
 ## How to use
 Create a folder in your Blockland/Add-ons folder named *Gamemode_WR* and then put everything from this repo into the folder.
+
 It is highly advised to have it named Gamemode_WR instead of Gamemode_WhatRemains due to the issues with the the string limit on centerPrint.
 Without the shorter file name, display errors could happen.
 
@@ -177,4 +178,5 @@ Without the shorter file name, display errors could happen.
 
 ## Included Ambient Music
 Storm.ogg, Water.ogg, Wind.ogg, WRFire.ogg, WRStatic.ogg, WRWarning.ogg, Rain.ogg
+
 Place these in your Blockland/Add-ons/Music folder
