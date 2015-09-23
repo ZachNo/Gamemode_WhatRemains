@@ -27,7 +27,7 @@ $Weather::newSunAmbient = "0.1 0.1 0.1";
 $Weather::newSunShadow = "0.09 0.09 0.09";
 $Weather::updateMS = 1000;
 
-$Weather::rainChance = 5;
+$Weather::rainChance = 15;
 $Weather::cloudyChance = 15;
 $Weather::stopRainingChance = 75;
 $Weather::keepCloudyChance = 80;
@@ -216,17 +216,17 @@ function startLightning()
 		return;
 	$Lightning = new Lightning() {
 		position = "2048 2048 2000";
-        rotation = "1 0 0 0";
-        scale = "4096 4096 2000";
-        dataBlock = "LightningStorm";
-        strikesPerMinute = "0.0000000001";
-        strikeWidth = "10";
-        strikeRadius = "256";
-        color = "1 1 1 1";
-        fadeColor = "0.5 0.75 1 1";
-        chanceToHitTarget = "0.5";
-        boltStartRadius = "20";
-        useFog = "0";
+		rotation = "1 0 0 0";
+		scale = "4096 4096 2000";
+		dataBlock = "LightningStorm";
+		strikesPerMinute = "0.0000000001";
+		strikeWidth = "10";
+		strikeRadius = "256";
+		color = "1 1 1 1";
+		fadeColor = "0.5 0.75 1 1";
+		chanceToHitTarget = "0.5";
+		boltStartRadius = "20";
+		useFog = "0";
 	};
 	missionGroup.add($Lightning);
 	$Lightning.strikesPerMinute = 0.0000000001;
@@ -527,16 +527,6 @@ function randomWeather()
 			startStorm(getRandom(getWord($Weather::randomStormInterval,0),getWord($Weather::randomStormInterval,1)) * 1000, getRandom(10,100)/100, 0);
 			$Weather::randomLoop = schedule($Weather::delayChangeRain, 0, randomWeather);
 		}
-		else if(!$Weather::isCloudy && $Weather::cloudyChance >= getRandom(1,100))
-		{
-			startStorm(getRandom(getWord($Weather::randomStormInterval,0),getWord($Weather::randomStormInterval,1)) * 1000, 0, 1);
-			$Weather::randomLoop = schedule($Weather::delayChangeNormal, 0, randomWeather);
-		}
-		else if($Weather::isCloudy && $Weather::keepCloudyChance >= getRandom(1,100))
-		{
-			stopStorm(getRandom(getWord($Weather::randomStormInterval,0),getWord($Weather::randomStormInterval,1)) * 1000, 0);
-			$Weather::randomLoop = schedule($Weather::delayChangeNormal, 0, randomWeather);
-		}
 		else
 		{
 			$Weather::randomLoop = schedule($Weather::delayChangeNormal, 0, randomWeather);
@@ -549,10 +539,6 @@ function randomWeather()
 			if($Weather::keepCloudyChance >= getRandom(1,100))
 			{
 				stopStorm(getRandom(getWord($Weather::randomStormInterval,0),getWord($Weather::randomStormInterval,1)) * 1000, 1);
-			}
-			else
-			{
-				stopStorm(getRandom(getWord($Weather::randomStormInterval,0),getWord($Weather::randomStormInterval,1)) * 1000, 0);
 			}
 			$Weather::randomLoop = schedule($Weather::delayChangeNormal, 0, randomWeather);
 		}
@@ -571,14 +557,11 @@ function randomWeather()
 //Init skybox and junk
 function initWeather()
 {
-	loadDayCycle("Add-ons/DayCycle_Teneksi/siten1.daycycle");
-	new scriptObject(fake){isAdmin=1;isSuperAdmin=1;};
-	serverCmdEnvGui_SetVar(fake, "DayLength", 7200);
-	//sky.stormclouds(0,10);
 	sky.fogDistance = 0;
-	
 	randomWeather();
+	
+	$Weather::Debug=0;
 }
 
 //Take out weather for now
-//schedule(100,0,initWeather);
+schedule(100,0,initWeather);

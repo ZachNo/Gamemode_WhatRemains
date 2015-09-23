@@ -78,6 +78,7 @@ function Player::noProtection(%this)
 //Check player's inventory to see if they need the fist weapon or not
 function GameConnection::checkFist(%this)
 {
+	%player.setHealth(health);
 	%player = %this.player;
 	if(!isObject(%player))
 		return;
