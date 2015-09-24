@@ -120,7 +120,7 @@ Without the shorter file name, display errors could happen.
 * Server_VehicleGore 
 * Server_VignetteDamage 
 * Support_HeadshotMod
-* System_ItemStorage_Mod
+* System_ItemStorage
 * Item_Kevlar
 * Vehicle_Basic_Skateboard 
 * Vehicle_Bengs 
