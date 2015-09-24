@@ -264,7 +264,7 @@ datablock fxDTSBrickData(SurviveVehicleBrick)
 	brickFile = "base/data/bricks/special/vehicleSpawn.blb";
 	category = "Special";
 	subCategory = "What Remains";
-	uiName = "Vehicle Spawn ";
+	uiName = "WRVehicle Spawn ";
 	specialBrickType = "vehicleSpawn";
 };
 
