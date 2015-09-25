@@ -42,3 +42,19 @@ datablock fxDTSBrickData(SurviveVehicleBrick)
 	uiName = "WRVehicle Spawn ";
 	specialBrickType = "vehicleSpawn";
 };
+datablock fxDTSBrickData (BrickZombieWR_HoleSpawnData)
+{
+	brickFile = "Add-ons/Bot_Hole/4xSpawn.blb";
+	category = "Special";
+	subCategory = "Holes";
+	uiName = "WRZombie Hole";
+	iconName = "Add-Ons/Bot_Zombie/icon_zombie";
+
+	bricktype = 2;
+	cancover = 0;
+	orientationfix = 1;
+	indestructable = 1;
+
+	isBotHole = 1;
+	holeBot = "WRZombieHoleBot";
+};
