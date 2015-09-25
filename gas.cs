@@ -16,7 +16,7 @@ registerOutputEvent("fxDTSBrick", "addGas", "int 1 1000 1", 0);
 registerOutputEvent("fxDTSBrick", "setGas", "int 1 1000 1", 0);
 registerOutputEvent("Vehicle", "addGas", "int 1 1000 1", 1);
 registerOutputEvent("Vehicle", "setGas", "int 1 1000 1", 1);
-$VGM::DefaultGas = 500;
+$VGM::DefaultGas = 200;
 
 if(isFile("Add-Ons/Event_Variables/changelog.txt") && $AddOn__Event_Variables)
 {

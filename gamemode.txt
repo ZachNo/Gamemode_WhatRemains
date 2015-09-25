@@ -129,7 +129,6 @@ ADDON Script_SMMBodies
 ADDON Script_Sneak 
 ADDON Script_SpawnMessage 
 ADDON Script_ToggleSuicide 
-ADDON Script_VehicleAttributes 
 ADDON Script_VehicleLock 
 ADDON Script_VehicleRestriction 
 ADDON server_antiInvite 
@@ -215,6 +214,8 @@ ADDON Brick_BookOpen
 ADDON Brick_PrintPlates
 ADDON Brick_WMPlants
 ADDON Brick_Spotlight
+
+ADDON Script_VehicleAttributes 
 
 //Ambient Music
 MUSIC Storm
