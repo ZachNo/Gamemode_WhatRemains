@@ -69,6 +69,17 @@ package spawnProtection
 		}
 		parent::damage(%data, %obj, %sourceObj, %position, %amount, %damageType, %momentum);
 	}
+	function gameConnection::onDeath(%this,%obj,%killer,%type,%area)
+	{
+		%client.quantity["9mmrounds"] = 0;
+		%client.quantity["45Caliber"] = 0;
+		%client.quantity["57rounds"] = 0;
+		%client.quantity["556rounds"] = 0;
+		%client.quantity["762mmrounds"] = 0;
+		%client.quantity["akrounds"] = 0;
+		%client.quantity["shotgunrounds"] = 0;
+		parent::onDeath(%this,%obj,%killer,%type,%area);
+	}
 };
 activatePackage(spawnProtection);
 function Player::noProtection(%this)
