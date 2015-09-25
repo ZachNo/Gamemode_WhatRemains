@@ -20,6 +20,7 @@ $avatarLockToggle = 1;
 $ClickPush::Status = 1;
 $SMMBodies::Remove = 0;
 $SMMBodies::CanCarry = 0;
+$VGM::Enabled = 1;
 
 //Modded Over the shoulder player
 datablock PlayerData(PlayerOTSNoJet : PlayerStandardArmor)
@@ -80,6 +81,7 @@ package spawnProtection
 		%client.quantity["shotgunrounds"] = 0;
 		parent::onDeath(%this,%obj,%killer,%type,%area);
 	}
+	
 };
 activatePackage(spawnProtection);
 function Player::noProtection(%this)
@@ -90,8 +92,8 @@ function Player::noProtection(%this)
 //Check player's inventory to see if they need the fist weapon or not
 function GameConnection::checkFist(%this)
 {
-	%player.setHealth(health);
 	%player = %this.player;
+	%player.setHealth(%player.health);
 	if(!isObject(%player))
 		return;
 	//check to see if player has fists/backpack
@@ -224,6 +226,9 @@ RegisterPersistenceVar("quantity57rounds",false,"");
 RegisterPersistenceVar("quantityakrounds",false,"");
 RegisterPersistenceVar("quantity762mmrounds",false,"");
 RegisterPersistenceVar("quantity44Prounds",false,"");
+RegisterPersistenceVar("armor", false, "");
+RegisterPersistenceVar("armored", false, "");
+RegisterPersistenceVar("armorDivider", false, "");
 
 //Overrides the connect, leave, and death chat messages
 package override_minigameMessage

@@ -70,7 +70,7 @@ function VGM_tick()
 			}
 			else
 			{
-				bottomprint(%cl, "Fuel: \c3" @ mCeil(%vech.VGM_Gas), 1);
+				centerprint(%cl, "Fuel: \c3" @ mCeil(%vech.VGM_Gas), 1);
 			}
 		}
 		%vech.VGM_OldPos = %vech.position;

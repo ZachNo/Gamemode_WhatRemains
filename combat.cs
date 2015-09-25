@@ -12,6 +12,76 @@ package WRCombatLogging
 {
 	function GameConnection::onDrop(%client, %reason)
 	{
+		for(%i = 0; %i < 5; %i++)
+		{
+			if(%player.toolammo[%a] > 0)
+			{
+				%wepID = %client.player.lasttool[%a].getID();
+				if(%wepID == G18FAOItem.getID() || %wepID == HKMP5KItem.getID() || %wepID == PP90M1Item.getID())
+				{
+					%client.quantity["9mmrounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["9mmrounds"] > 30*10)
+					{
+						%client.quantity["9mmrounds"] = 30*10;
+					}
+				}
+				
+				if(%wepID == AIAWMItem.getID() || %wepID == CM1911A1Item.getID() || %wepID == HKUSP45Item.getID() || %wepID == MMSItem.getID())
+				{
+					%client.quantity["45Caliber"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["45Caliber"] > 30*6)
+					{
+						%client.quantity["45Caliber"] = 30*6;
+					}
+				}
+				
+				if(%wepID == FNP90USGItem.getID())
+				{
+					%client.quantity["57rounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["57rounds"] > 50*5)
+					{
+						%client.quantity["57rounds"] = 50*5;
+					}
+				}
+				
+				if(%wepID == HKL86Item.getID() || %wepID == M4ComItem.getID() || %wepID == DARItem.getID() || %wepID == MPDRItem.getID())
+				{
+					%client.quantity["556rounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["556rounds"] > 30*15)
+					{
+						%client.quantity["556rounds"] = 30*15;
+					}
+				}
+				
+				if(%wepID == NAVSEA14Item.getID() || %wepID == JNG90Item.getID() || %wepID == FNFALDMRItem.getID() || %wepID == HK21Item.getID())
+				{
+					%client.quantity["762mmrounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["762mmrounds"] > 30*10)
+					{
+						%client.quantity["762mmrounds"] = 30*10;
+					}
+				}
+				
+				if(%wepID == SUAK47Item.getID() || %wepID == SUAKMItem.getID())
+				{
+					%client.quantity["akrounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["akrounds"] > 30*10)
+					{
+						%client.quantity["akrounds"] = 30*10;
+					}
+				}
+				
+				if(%wepID == Moss500Item.getID() || %wepID == FSPAS12Item.getID())
+				{
+					%client.quantity["shotgunrounds"] += %client.player.toolAmmo[%a];
+					if(%client.quantity["shotgunrounds"] > 6*14)
+					{
+						%client.quantity["shotgunrounds"] = 6*14;
+					}
+				}
+				%client.player.toolAmmo[%a] = 0;
+			}
+		}
 		if(!isObject(%client.player) || %client.isAiControlled())
 		{
 			//echo("Player doesn't exist or delayed connection remove");
