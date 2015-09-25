@@ -63,6 +63,7 @@ package spawnProtection
 	{
 		if(%obj.isCorpseVehicle)
 		{
+			%obj.corpse.delete();
 			%obj.delete();
 			return;
 		}
