@@ -92,108 +92,108 @@ package longRangeWeapon
 	//BKT_ATAC
 	function AIAWMFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSniperFire2Sound",300,3000);
+		schedule(500,0,playRangedSound,%obj,"FarSniperFire2Sound",100,3000);
 		parent::AIAWMFire(%this,%obj,%slot,%val);
 	}
 	function G18FAOFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",100,1800);
 		parent::G18FAOFire(%this,%obj,%slot,%val);
 	}
 	function HKL86Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarLMGFireSound",200,2400);
+		schedule(500,0,playRangedSound,%obj,"FarLMGFireSound",100,2400);
 		parent::HKL86Fire(%this,%obj,%slot,%val);
 	}
 	function M4ComFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",100,2200);
 		parent::M4ComFire(%this,%obj,%slot,%val);
 	}
 	function CM1911A1Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",100,1800);
 		parent::CM1911A1Fire(%this,%obj,%slot,%val);
 	}
 	function NAVSEA14Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",100,2200);
 		parent::NAVSEA14Fire(%this,%obj,%slot,%val);
 	}
 	
 	//BKT_Combat
 	function DARFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",100,2200);
 		parent::DARFire(%this,%obj,%slot,%val);
 	}
 	function JNG90Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSniperFireSound",300,3000);
+		schedule(500,0,playRangedSound,%obj,"FarSniperFireSound",100,3000);
 		parent::JNG90Fire(%this,%obj,%slot,%val);
 	}
 	function Moss500Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarShotgunFireSound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarShotgunFireSound",100,2200);
 		parent::Moss500Fire(%this,%obj,%slot,%val);
 	}
 	function HKMP5KFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",100,1800);
 		parent::HKMP5KFire(%this,%obj,%slot,%val);
 	}
 	
 	//BKT_Enforce
 	function MPDRFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",100,1800);
 		parent::MPDRFire(%this,%obj,%slot,%val);
 	}
 	function FNP90USGFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",100,1800);
 		parent::FNP90USGFire(%this,%obj,%slot,%val);
 	}
 	function FSPAS12Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarShotgunFireSound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarShotgunFireSound",100,2200);
 		parent::FSPAS12Fire(%this,%obj,%slot,%val);
 	}
 	function HKUSP45Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",100,1800);
 		parent::HKUSP45Fire(%this,%obj,%slot,%val);
 	}
 	
 	//BKT_Rebel
 	function SUAK47Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",100,2200);
 		parent::SUAK47Fire(%this,%obj,%slot,%val);
 	}
 	function SUAKMFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",100,2200);
 		parent::SUAKMFire(%this,%obj,%slot,%val);
 	}
 	function FNFALDMRFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFire2Sound",100,2200);
 		parent::FNFALDMRFire(%this,%obj,%slot,%val);
 	}
 	function HK21Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",200,2200);
+		schedule(500,0,playRangedSound,%obj,"FarAssaultFireSound",100,2200);
 		parent::HK21Fire(%this,%obj,%slot,%val);
 	}
 	function MMSFire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarPistolFireSound",100,1800);
 		parent::MMSFire(%this,%obj,%slot,%val);
 	}
 	function PP90M1Fire(%this,%obj,%slot,%val)
 	{
-		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",200,1800);
+		schedule(500,0,playRangedSound,%obj,"FarSMGFireSound",100,1800);
 		parent::PP90M1Fire(%this,%obj,%slot,%val);
 	}
 };
